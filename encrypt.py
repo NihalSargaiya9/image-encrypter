@@ -24,7 +24,11 @@ def decrypt(imagename):
     return tata
 
 imagename= input("enter image name with extention: ")
+user_input=int(input("\n1. Encrypt \n2. Decrypt \n\nEnter your choice : "))
 
-encrypt(imagename)
-decrypt(imagename).show()
-
+if(user_input==1): 
+	encrypt(imagename)	
+elif (user_input==2):
+	decrypt(imagename).show()
+else:
+	print("Invalid Choice")
